@@ -46,7 +46,7 @@ fix-author fix -fu thautwarm -te 123@q3.com
 fix-author fix -fe <specific email> -tu "<expected username>"
 ```
 
-- Change email for when email and dated username are both specific
+- Change email when email and dated username are both specific
 
 ```
 fix-author fix -fe <specific email> -fu <dated username> -tu <expected email>

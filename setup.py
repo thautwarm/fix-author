@@ -1,6 +1,7 @@
 from setuptools import setup
+
 setup(
-    name='fix_author',
+    name='fix-author',
     version='1.0',
     packages=['fix_author'],
     install_requires=['rbnf', 'wisepy'],
@@ -8,7 +9,8 @@ setup(
     author='thautwarm',
     keywords='git commit, fix author',
     description='fix author info in git commits',
-    # long_description=readme,
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     python_requires='>=3.6.0',
     url='https://github.com/thautwarm/fix-author',
     author_email='twshere@outlook.com',
