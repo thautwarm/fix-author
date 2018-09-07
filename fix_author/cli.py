@@ -20,7 +20,6 @@ def fix(fu=None, tu=None, fe=None, te=None):
 
     log = check_output('git log').decode()
     branch = check_output('git branch').decode().split()[-1]
-    original_commit = []
     for commit, author, email in parse(log).result:
         if eq(author, fu) and eq(email, fe):
             print('processing', commit)
@@ -31,7 +30,6 @@ def fix(fu=None, tu=None, fe=None, te=None):
                 f'git commit --amend --author="{author} <{email}>" --no-edit')
             log = check_output('git log').decode().strip()
             res = partial_parse(log)
-            original_commit.append(commit)
             (new_commit, author_, email_) = res.result
             assert author == author_ and email_ == email
             check_output(f'git checkout {branch}')
