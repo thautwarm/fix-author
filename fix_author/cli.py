@@ -32,12 +32,12 @@ def fix(fu=None, tu=None, fe=None, te=None):
             log = check_output('git log').decode().strip()
             res = partial_parse(log)
             original_commit.append(commit)
-            (new_commit, author_, email_) = res.result[0]
+            (new_commit, author_, email_) = res.result
             assert author == author_ and email_ == email
             check_output(f'git checkout {branch}')
             check_output(f'git replace {commit} {new_commit}')
             print(f'transformed to new commit: {new_commit}')
-    check_output('git filter-branch -- --all')
+    check_output('git filter-branch -f -- --all')
 
 
 def main():

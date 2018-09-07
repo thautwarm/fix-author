@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='fix-author',
-    version='1.0',
+    version='1.1',
     packages=['fix_author'],
     install_requires=['rbnf', 'wisepy'],
     license='MIT',

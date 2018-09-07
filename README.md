@@ -1,6 +1,7 @@
 
 ## Fix Author
 
+
 Sometimes, the history information of a committer could be missing by mistakes.
 
 For instance, someone might configure his email incorrectly, or he might just not configure related
