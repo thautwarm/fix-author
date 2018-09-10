@@ -28,8 +28,7 @@ Available commands:
       fu: from user/author name to change.
       tu: to user/name to be changed to.
       fe: from email/email to change.
-      tu: to email/email to be changed to.
-
+      te: to email/email to be changed to.
 ```
 
 Here are four examples:
@@ -50,7 +49,7 @@ fix-author fix -fe <specific email> -tu "<expected username>"
 - Change email when email and dated username are both specific
 
 ```
-fix-author fix -fe <specific email> -fu <dated username> -tu <expected email>
+fix-author fix -fe <specific email> -fu <dated username> -te <expected email>
 ```
 
 **Take care**: after performing refactoring,

@@ -11,8 +11,7 @@ def fix(fu=None, tu=None, fe=None, te=None):
     fu: from user/author name to change.
     tu: to user/name to be changed to.
     fe: from email/email to change.
-    tu: to email/email to be changed to.
-
+    te: to email/email to be changed to.
     """
 
     def eq(a, b):
